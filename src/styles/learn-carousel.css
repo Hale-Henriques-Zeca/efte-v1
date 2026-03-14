@@ -1,0 +1,43 @@
+.learn-carousel-container {
+  overflow: hidden;
+  width: 100%;
+  perspective: 1200px;
+}
+
+.learn-carousel-track {
+  display: flex;
+  width: max-content;
+  animation: learnScroll 100s linear infinite;
+}
+
+/* Pausa ao hover (mouse) */
+.learn-carousel-container:hover .learn-carousel-track {
+  animation-play-state: paused;
+}
+
+/* Mobile: pausa no toque */
+.learn-carousel-container:active .learn-carousel-track {
+  animation-play-state: paused;
+}
+
+.learn-carousel-item {
+  width: 340px;
+  margin-right: 24px;
+  transform: rotateY(8deg);
+  transition: transform 0.5s ease;
+}
+
+/* Efeito 3D no hover */
+.learn-carousel-item:hover {
+  transform: rotateY(0deg) scale(1.03);
+}
+
+/* Animação contínua */
+@keyframes learnScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

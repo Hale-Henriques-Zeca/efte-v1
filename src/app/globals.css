@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* =====================================
+   EBC CEX — DESIGN TOKENS OFICIAIS
+===================================== */
+
+:root {
+  /* FUNDOS */
+  --bg: #0B5ED7;            /* Branco institucional (E-Coin) */
+  --panel: #ffffff;         /* Painéis limpos */
+
+  /* TEXTO */
+  --text: #0b1f3b;          /* Azul escuro neutro */
+  --text-muted: #64748b;
+
+  /* BORDAS */
+  --border: rgba(11, 94, 215, 0.15);
+
+  /* CORES BASE DA MARCA */
+  --blue: #0B5ED7;          /* Azul EBC */
+  --green: #1E9B4B;         /* Verde EBC */
+
+  /* PREMIUM */
+  --gold: #D4AF37;
+}
+
+/* BASE GLOBAL */
+html,
+body {
+  height: 10%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* SCROLLBAR — institucional */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    var(--blue),
+    var(--green)
+  );
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #D4AF37;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

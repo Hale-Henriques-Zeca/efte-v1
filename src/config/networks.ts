@@ -1,0 +1,34 @@
+import { bsc, bscTestnet } from "wagmi/chains";
+
+export const NETWORKS = {
+  testnet: {
+    chain: bscTestnet,
+    label: "BSC Testnet",
+    contracts: { 
+  ECOIN: "0xDf69235019cc416dd5Be75dfc0eDc922aB4b5964",
+  EUSD: "0xf6B07aa2FfB7A52B6f7cD7508598Ccaf224c6F1B",
+  USDT: "COLOCA_O_USDT_TESTNET",
+
+  PRICE_ENGINE_GLOBAL: "0x7Ac899eE2FDf5533Af1a1C0C2907d21536c87fDc",
+
+  PRIMARY_SALE: "0x00C6A53c583CbEC68EAa83563A9021F6F527eea3",
+  SECONDARY_MARKET: "0xeA46eb35545b72536FA928627080e7DCc90B9768",
+  FEE_COLLECTOR: "0x18168d7978ecE599Aeaab46018C1F06132F4d375",
+  REFERRAL: "0x145C226268Be10BE22b50DbFAE0f52c71535eA80",
+    },
+  },
+
+  mainnet: {
+    chain: bsc,
+    label: "BSC Mainnet",
+    contracts: {
+      PRICE_ENGINE: "0x...", // quando deployares
+      PRIMARY_SALE: "0x...",
+      SECONDARY_MARKET: "0x...",
+      FEE_COLLECTOR: "0x...",
+    },
+  },
+} as const;
+
+
+
