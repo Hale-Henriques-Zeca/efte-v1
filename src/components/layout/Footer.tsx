@@ -54,7 +54,7 @@ export default function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="border-t border-white/10 py-4 text-center text-xs opacity-60">
-        © {new Date().getFullYear()} EdenKingDom Corporation — EFTE
+      Since © 2025 to {new Date().getFullYear()} EdenKingDom Corporation — EFTE
       </div>
     </footer>
   );
