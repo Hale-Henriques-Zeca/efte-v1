@@ -1,11 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Button from "@/components/ui/Button";
-import { useAccount, useConnect, useDisconnect } from "wagmi";
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { useEffect, useState } from "react";
-
+import { useState } from "react";
+import Button from "../ui/Button";
+import { useAccount, useConnect } from "wagmi";
 
 function shortAddress(addr?: string) {
   if (!addr) return "";
@@ -13,48 +11,40 @@ function shortAddress(addr?: string) {
 }
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
   const { address, isConnected } = useAccount();
   const { connect, connectors, isPending } = useConnect();
-  const { disconnect } = useDisconnect();
-  
 
   const injectedConnector = connectors.find(
     (c) => c.id === "injected"
   );
 
   return (
-    <header
-      className="fixed top-0 z-50 w-full backdrop-blur-md border-b border-black/10"
-      style={{ backgroundColor: "rgba(255,255,255,0.85)" }}
-    >
-      <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b border-black/10">
+      <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2">
           <img src="/logo-ebc.png" alt="EBC" className="h-8 w-auto" />
           <span className="font-semibold text-[#1C2D5A]">EFTE</span>
         </Link>
 
-        {/* NAV */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1C2D5A]">
+        {/* DESKTOP NAV */}
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1C2D5A]">
           <Link href="/">Home</Link>
           <Link href="/trade/market">P2P</Link>
-          <Link href="/trade">Abrir Terminal de Trading OnChain</Link>
-        </nav>
+          <Link href="/trade">Trade OnChain</Link>
+        </div>
 
-        {/* WALLET */}
+        {/* RIGHT */}
         <div className="flex items-center gap-3">
-          {isConnected ? (
-            <>
-              <span
-                className="text-sm font-semibold"
-                style={{ color: "#1FA971" }}
-              >
-                {shortAddress(address)}
-              </span> 
-              
 
-      
-            </>
+          {/* WALLET */}
+          {isConnected ? (
+            <span className="text-sm font-semibold text-green-600">
+              {shortAddress(address)}
+            </span>
           ) : (
             <Button
               variant="gold"
@@ -63,11 +53,38 @@ export default function Header() {
                 connect({ connector: injectedConnector })
               }
             >
-              {isPending ? "Conectando..." : "Conectar Wallet"}
+              {isPending ? "Conectando..." : "Conectar"}
             </Button>
           )}
+
+          {/* MOBILE MENU BUTTON */}
+          <button
+            className="md:hidden text-2xl"
+            onClick={() => setOpen(!open)}
+          >
+            ☰
+          </button>
         </div>
-      </div>
+
+        {/* MOBILE DROPDOWN */}
+        {open && (
+          <div className="absolute top-full left-0 w-full bg-white border-t flex flex-col items-center py-6 gap-5 md:hidden z-50">
+
+            <Link href="/" onClick={() => setOpen(false)}>
+              Home
+            </Link>
+
+            <Link href="/trade/market" onClick={() => setOpen(false)}>
+              P2P
+            </Link>
+
+            <Link href="/trade" onClick={() => setOpen(false)}>
+              Trade OnChain
+            </Link>
+
+          </div>
+        )}
+      </nav>
     </header>
   );
 }

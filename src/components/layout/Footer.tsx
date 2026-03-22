@@ -33,7 +33,7 @@ export default function Footer() {
              <Link href="/trade/market">P2P Trading Terminal</Link>
             </li>
             <li>
-              <Link href="/trade">Abrir Terminal de Trading OnChain</Link>
+              <Link href="/trade"> Trade OnChain</Link>
             </li>
           </ul>
         </div>
