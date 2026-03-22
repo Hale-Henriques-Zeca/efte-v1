@@ -7,7 +7,7 @@ import TradePanel from "../components/TradePanel";
 export default function TradingDesktop() {
   return (
     <div className="h-screen bg-[#0b0e14] text-white flex flex-col">
-      <TopBar />
+     
 
       <div className="flex flex-1 overflow-hidden">
         <div className="w-[320px] border-r border-white/10">
