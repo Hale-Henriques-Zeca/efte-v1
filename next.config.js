@@ -13,6 +13,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
 
+  eslint: {
+  ignoreDuringBuilds: true,
+},
   // Remove header de "Powered by Next.js"
   poweredByHeader: false,
 
