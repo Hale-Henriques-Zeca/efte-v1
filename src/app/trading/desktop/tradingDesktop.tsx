@@ -1,7 +1,7 @@
 import TopBar from "../components/topBar";
-import OrderBook from "../components/OrderBook";
-import ChartArea from "../components/chartArea";
-import TradePanel from "../components/tradePanel";
+import OrderBook from "../components/orderBook";
+import ChartArea from "../components/ChartArea";
+import TradePanel from "../components/TradePanel";
 
 
 export default function TradingDesktop() {

@@ -1,5 +1,5 @@
-import ChartArea from "../components/chartArea";
-import TradePanel from "../components/tradePanel";
+import ChartArea from "../components/ChartArea";
+import TradePanel from "../components/TradePanel";
 import MarketStats from "../components/marketStats";
 
 export default function TradingMobile() {
