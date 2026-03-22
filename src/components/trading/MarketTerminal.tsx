@@ -1,7 +1,7 @@
 "use client";
 
 import ChartArea from "@/app/trading/components/ChartArea";
-import MarketStats from "@/app/trading/components/MarketStats";
+import MarketStats from "@/app/trading/components/marketStats";
 import Tabs from "@/app/trading/components/tabs";
 import TopBar from "@/app/trading/components/topBar";
 
