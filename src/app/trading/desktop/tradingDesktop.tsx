@@ -1,4 +1,4 @@
-import TopBar from "../components/TopBar";
+import TopBar from "../components/topBar";
 import OrderBook from "../components/OrderBook";
 import ChartArea from "../components/ChartArea";
 import TradePanel from "../components/TradePanel";

@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import TradingMobile from "./mobile/TradingMobile";
-import TradingDesktop from "./desktop/TradingDesktop";
+import TradingMobile from "./mobile/tradingMobile";
+import TradingDesktop from "./desktop/tradingDesktop";
 
 export default function TradingLayout() {
   const [isMobile, setIsMobile] = useState(false);
