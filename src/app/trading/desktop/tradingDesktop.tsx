@@ -11,15 +11,15 @@ export default function TradingDesktop() {
 
       <div className="flex flex-1 overflow-hidden">
         <div className="w-[320px] border-r border-white/10">
-          <OrderBook />
+          
         </div>
 
         <div className="flex-1">
-          <ChartArea />
+         
         </div>
 
         <div className="w-[360px] border-l border-white/10">
-          <TradePanel />
+          
         </div>
       </div>
     </div>
