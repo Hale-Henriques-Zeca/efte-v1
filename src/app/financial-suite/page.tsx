@@ -58,7 +58,7 @@ export default function FinancialSuite() {
     <main className="min-h-screen relative w-full py-24 px-6 bg-gradient-to-b from-[#0B5ED7] via-[#1E9B4B] to-[#020617] text-white py-16">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h1
-          className="text-5xl md:text-6xl font-extrabold text-center mb-6 bg-gradient-to-r from-[#D4AF37] to-[#ffffff] bg-clip-text text-transparent"
+          className="text-3xl md:text-6xl font-extrabold text-center mb-6 bg-gradient-to-r from-[#D4AF37] to-[#ffffff] bg-clip-text text-transparent"
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

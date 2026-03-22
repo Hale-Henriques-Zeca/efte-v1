@@ -33,7 +33,7 @@ export default function Header() {
         {/* DESKTOP NAV */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1C2D5A]">
           <Link href="/">Home</Link>
-          <Link href="/trade/market">AI Trading Bot</Link>
+          <Link href="/p2p">P2P Trading Terminal</Link>
           <Link href="/trade">Trade OnChain</Link>
           <Link href="/equipes">Team Leader</Link>
         </div>
@@ -75,8 +75,8 @@ export default function Header() {
               Home
             </Link>
 
-            <Link href="/trade/market" onClick={() => setOpen(false)}>
-              AI Trading Bot
+            <Link href="/p2p" onClick={() => setOpen(false)}>
+              P2P Trading
             </Link>
 
             <Link href="/trade" onClick={() => setOpen(false)}>

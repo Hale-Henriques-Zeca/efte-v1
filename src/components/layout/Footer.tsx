@@ -35,7 +35,7 @@ export default function Footer() {
           <h4 className="text-sm font-semibold mb-3 text-white">Plataforma</h4>
           <ul className="space-y-2 text-sm opacity-80">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/trade/market">AI Trading Bot Terminal</Link></li>
+            <li><Link href="/p2p">P2P Trading Terminal</Link></li>
             <li><Link href="/trade">Trade OnChain</Link></li>
             <li><Link href="/equipes">Team Leader</Link></li>
           </ul>
