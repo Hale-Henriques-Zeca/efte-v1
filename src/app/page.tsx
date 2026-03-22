@@ -1,19 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Button from "@/components/ui/Button";
-import Section from "@/components/ui/Section";
+import Button from "../components/ui/Button";
+import Section from "../components/ui/Section";
 import Link from "next/link";
-import LearnSection from "@/components/learn/LearnSection";
-import MarketOverview from "@/components/market/MarketOverview";
-import LearnCarousel from "@/components/learn/LearnCarousel";
-import FinancialSuite from "@/app/financial-suite/page";
-import TradingMarketPage from "@/app/trading-market/page";
-import DerivativesPage from "@/app/derivatives/page";
-import BetMarketsPage from "@/app/bet-markets/page";
-import EarnPage from "@/app/earn/page";
-import AILabsPage from "@/app/ai-labs/page";
-import HeroButtons from "@/components/HeroButtons";
+import MarketOverview from "../components/market/MarketOverview";
+import LearnCarousel from "../components/learn/LearnCarousel";
+import FinancialSuite from "../app/financial-suite/page";
+import TradingMarketPage from "../app/trading-market/page";
+import DerivativesPage from "../app/derivatives/page";
+import BetMarketsPage from "../app/bet-markets/page";
+import EarnPage from "../app/earn/page";
+import AILabsPage from "../app/ai-labs/page";
+import HeroButtons from "../components/HeroButtons";
 import {
   AlertTriangle,
   LineChart,

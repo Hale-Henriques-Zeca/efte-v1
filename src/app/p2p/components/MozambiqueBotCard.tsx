@@ -5,7 +5,7 @@ export default function MozambiqueBotCard() {
     <BaseCard title="Mozambique P2P Bot" color="red">
       Agora vamos ao
       <strong className="text-red-400">
-        {" "}E-Coin Mozambique P2P Telegram Bot
+        {" "}E-Coin, E-USD e USDT Mozambique P2P Telegram Bot
       </strong>.
       Um canal dedicado ao mercado moçambicano,
       permitindo compra e venda de cripto com
