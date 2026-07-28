@@ -75,8 +75,8 @@ export default function Header() {
               Home
             </Link>
 
-            <Link href="/p2p" onClick={() => setOpen(false)}>
-              P2P Trading
+            <Link href="/financial-suite/pay/agent" onClick={() => setOpen(false)}>
+              ePay Agent
             </Link>
 
             <Link href="/trade" onClick={() => setOpen(false)}>

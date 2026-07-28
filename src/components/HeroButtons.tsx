@@ -7,14 +7,14 @@ import { FaCoins, FaCreditCard, FaHandHoldingHeart, FaChartLine, FaUniversity } 
 export default function HeroButtons() {
   const cards = [
     {
-      title: "E-Coinar via P2P Trading",
-      desc: "Compre ou venda E-Coin diretamente com outros usuários com segurança e liquidez imediata.",
-      href: "/p2p", // ✅ rota correta
-      icon: <FaCoins />,
-      gradient: "from-[#D4AF37] via-[#F8E07D] to-[#D4AF37]",
-      glow: "shadow-[0_0_30px_rgba(212,175,55,0.6)]",
-      iconColor: "text-[#F8E07D]",
-    },
+  title: "Depósitos e Levantamentos via Agente ePay",
+  desc: "Realize operações financeiras locais em tempo real com os nossos agentes credenciados e com total segurança.",
+  href: "/financial-suite/pay/agent", 
+  icon: <FaCoins />, // Podes trocar por <FaUserTie /> ou <FaStore /> se preferires um ícone de Agente
+  gradient: "from-[#D4AF37] via-[#F8E07D] to-[#D4AF37]",
+  glow: "shadow-[0_0_30px_rgba(16,185,129,0.5)]",
+  iconColor: "text-emerald-400",
+},
     {
   title: "Doação Humanitária E-Social",
   desc: "Doe em E-Coin ou USDT e ajude a salvar vidas. A E-Social é a divisão humanitária da EdenKingDom — juntos pela humanidade.",
