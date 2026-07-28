@@ -33,7 +33,7 @@ export default function Header() {
         {/* DESKTOP NAV */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1C2D5A]">
           <Link href="/">Home</Link>
-          <Link href="/p2p">P2P Trading Terminal</Link>
+          <Link href="/financial-suite/pay/agent">ePay Agent</Link>
           <Link href="/trade">Trade OnChain</Link>
           <Link href="/equipes">Team Leader</Link>
         </div>
