@@ -15,7 +15,7 @@ const payModules = [
   {
     title: 'Personal Dashboard',
     desc: 'Visão geral do teu saldo, carteira e histórico de transações.',
-    href: '/financial-suite/pay/dashboard',
+    href: '/financial-suite/ePay/dashboard',
     icon: LayoutDashboard,
     badge: 'Conta',
     color: 'from-amber-500 to-yellow-600',
@@ -23,7 +23,7 @@ const payModules = [
   {
     title: 'Agente ePay',
     desc: 'Rede presencial de depósitos, levantamentos e comissões.',
-    href: '/financial-suite/pay/agent',
+    href: '/financial-suite/ePay/agent',
     icon: Users,
     badge: 'Popular',
     color: 'from-emerald-600 to-green-700',
@@ -31,15 +31,15 @@ const payModules = [
   {
     title: 'Crypto ATM',
     desc: 'Terminais automáticos de conversão de ativos digitais.',
-    href: '/financial-suite/pay/atm',
+    href: '/financial-suite/ePay/atm',
     badge: 'Em Breve',
     icon: Banknote,
     color: 'from-red-600 to-red-700',
   },
   {
-    title: 'Merchant Pay',
+    title: 'Merchant ePay',
     desc: 'Pagamentos instantâneos com QR Code em comerciantes.',
-    href: '/financial-suite/pay/merchant',
+    href: '/financial-suite/ePay/merchant',
     badge: 'Em Breve',
     icon: QrCode,
     color: 'from-amber-600 to-yellow-500',
@@ -47,7 +47,7 @@ const payModules = [
   {
     title: 'Encontrar Agente',
     desc: 'Localiza agentes ePay mais próximos de ti em tempo real.',
-    href: '/financial-suite/pay/agent/map',
+    href: '/financial-suite/ePay/agent/map',
     badge: 'Mapa',
     icon: MapPin,
     color: 'from-emerald-500 to-green-600',
@@ -55,7 +55,7 @@ const payModules = [
   {
     title: 'Blockchain Identity',
     desc: 'A tua identidade financeira imutável on-chain (NFT ID).',
-    href: '/financial-suite/pay/identity',
+    href: '/financial-suite/ePay/identity',
     badge: 'Web3 ID',
     icon: Fingerprint,
     color: 'from-red-500 to-amber-600',
@@ -63,7 +63,7 @@ const payModules = [
   {
     title: 'KYC Center',
     desc: 'Verificação de conta on-chain e base de dados.',
-    href: '/financial-suite/pay/kyc',
+    href: '/financial-suite/ePay/kyc',
     badge: 'Segurança',
     icon: ShieldCheck,
     color: 'from-emerald-700 to-teal-700',
@@ -71,7 +71,7 @@ const payModules = [
   {
     title: 'Analytics',
     desc: 'Estatísticas e métricas do ecossistema ePay.',
-    href: '/financial-suite/pay/analytics',
+    href: '/financial-suite/ePay/analytics',
     badge: 'Métricas',
     icon: ChartColumn,
     color: 'from-amber-700 to-red-700',
