@@ -10,7 +10,8 @@ import {
   User, 
   Map, 
   Star,
-  UserPlus
+  UserPlus,
+  Settings
 } from 'lucide-react';
 
 const agentActions = [
@@ -21,7 +22,7 @@ const agentActions = [
   { label: 'Weekly Salary', href: '/financial-suite/ePay/agent/Salary', icon: Coins, color: 'border-purple-600 bg-purple-950/20 text-purple-500' },
   { label: 'Comissões', href: '/financial-suite/ePay/agent/commissions', icon: Percent, color: 'border-emerald-500 bg-emerald-950/20 text-emerald-400' },
   { label: 'Histórico', href: '/financial-suite/ePay/agent/history', icon: History, color: 'border-slate-600 bg-slate-900 text-slate-300' },
-  { label: 'Perfil', href: '/financial-suite/ePay/agent/profile', icon: User, color: 'border-amber-500 bg-amber-950/20 text-amber-400' },
+  { label: 'Configurações', href: '/financial-suite/ePay/agent/settings', icon: Settings, color: 'border-amber-500 bg-amber-950/20 text-amber-400' },
   { label: 'Mapa de Agentes', href: '/financial-suite/ePay/agent/map', icon: Map, color: 'border-green-600 bg-green-950/20 text-green-500' },
   { label: 'Reputação', href: '/financial-suite/ePay/agent/reputation', icon: Star, color: 'border-yellow-500 bg-yellow-950/20 text-yellow-400' },
 ];
