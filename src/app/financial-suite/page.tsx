@@ -17,37 +17,37 @@ import {
 export default function FinancialSuite() {
   const modules = [
     {
-      name: "E-Pay",
+      name: "ePay",
       desc: "Sistema de pagamentos instantâneos fiat e crypto com liquidação global e integração POS.",
       icon: <CreditCard className="w-10 h-10 text-yellow-500" />,
-      href: "/financial-suite/pay",
+      href: "/financial-suite/ePay",
     },
     {
-      name: "E-Vault",
+      name: "eVault",
       desc: "Cofre digital e físico para gestão de fundos, reservas e segurança multiassinatura.",
       icon: <ShieldCheck className="w-10 h-10 text-blue-500" />,
       href: "/financial-suite/vault",
     },
     {
-      name: "E-TokenPad",
+      name: "eTokenPad",
       desc: "Carteira interna multi-ativo com histórico, transferências e sincronização blockchain.",
       icon: <Wallet className="w-10 h-10 text-green-500" />,
       href: "/financial-suite/wallet",
     },
     {
-      name: "E-Treasury",
+      name: "eTreasury",
       desc: "Gestão institucional do tesouro, reservas, liquidez e movimentações automatizadas.",
       icon: <Banknote className="w-10 h-10 text-emerald-500" />,
       href: "/financial-suite/treasury",
     },
     {
-      name: "E-POS",
+      name: "ePOS",
       desc: "Ponto de venda físico e digital com split automático, QR e integração com E-Pay.",
       icon: <SmartphoneNfc className="w-10 h-10 text-red-500" />,
       href: "/financial-suite/pos",
     },
     {
-      name: "E-Ledger",
+      name: "eLedger",
       desc: "Livro contábil interno com reconciliação automática e relatórios financeiros diários.",
       icon: <BarChart3 className="w-10 h-10 text-gray-500" />,
       href: "/financial-suite/ledger",

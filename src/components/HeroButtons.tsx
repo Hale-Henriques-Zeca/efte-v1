@@ -9,7 +9,7 @@ export default function HeroButtons() {
     {
   title: "Depósitos e Levantamentos via Agente ePay",
   desc: "Realize operações financeiras locais em tempo real com os nossos agentes credenciados e com total segurança.",
-  href: "/financial-suite/pay/agent", 
+  href: "/financial-suite/ePay/agent", 
   icon: <FaCoins />, // Podes trocar por <FaUserTie /> ou <FaStore /> se preferires um ícone de Agente
   gradient: "from-[#D4AF37] via-[#F8E07D] to-[#D4AF37]",
   glow: "shadow-[0_0_30px_rgba(16,185,129,0.5)]",

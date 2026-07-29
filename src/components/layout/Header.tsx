@@ -33,7 +33,7 @@ export default function Header() {
         {/* DESKTOP NAV */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1C2D5A]">
           <Link href="/">Home</Link>
-          <Link href="/financial-suite/pay/agent">ePay Agent</Link>
+          <Link href="/financial-suite/ePay/agent">ePay Agent</Link>
           <Link href="/trade">Trade OnChain</Link>
           <Link href="/equipes">Team Leader</Link>
         </div>
@@ -75,7 +75,7 @@ export default function Header() {
               Home
             </Link>
 
-            <Link href="/financial-suite/pay/agent" onClick={() => setOpen(false)}>
+            <Link href="/financial-suite/ePay/agent" onClick={() => setOpen(false)}>
               ePay Agent
             </Link>
 

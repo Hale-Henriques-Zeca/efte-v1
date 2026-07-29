@@ -18,7 +18,7 @@ const agentActions = [
   { label: 'Depósito (Comprar)', href: '/financial-suite/pay/agent/deposit', icon: ArrowDownLeft, color: 'border-emerald-600 bg-emerald-950/20 text-emerald-500' },
   { label: 'Levantamento (Vender)', href: '/financial-suite/pay/agent/withdraw', icon: ArrowUpRight, color: 'border-amber-600 bg-amber-950/20 text-amber-500' },
   { label: 'Transferir', href: '/financial-suite/pay/agent/transfer', icon: ArrowRightLeft, color: 'border-blue-600 bg-blue-950/20 text-blue-500' },
-  { label: 'Weekly Pool', href: '/financial-suite/pay/agent/Salary', icon: Coins, color: 'border-purple-600 bg-purple-950/20 text-purple-500' },
+  { label: 'Weekly Salary', href: '/financial-suite/pay/agent/Salary', icon: Coins, color: 'border-purple-600 bg-purple-950/20 text-purple-500' },
   { label: 'Comissões', href: '/financial-suite/pay/agent/commissions', icon: Percent, color: 'border-emerald-500 bg-emerald-950/20 text-emerald-400' },
   { label: 'Histórico', href: '/financial-suite/pay/agent/history', icon: History, color: 'border-slate-600 bg-slate-900 text-slate-300' },
   { label: 'Perfil', href: '/financial-suite/pay/agent/profile', icon: User, color: 'border-amber-500 bg-amber-950/20 text-amber-400' },
