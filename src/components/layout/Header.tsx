@@ -66,23 +66,6 @@ export default function Header() {
               <LanguageSelector onLangChange={handleLangChange} />
             </div>
 
-          {/* WALLET */}
-          {isConnected ? (
-            <span className="text-sm font-semibold text-green-600">
-              {shortAddress(address)}
-            </span>
-          ) : (
-            <Button
-              variant="gold"
-              onClick={() =>
-                injectedConnector &&
-                connect({ connector: injectedConnector })
-              }
-            >
-              {isPending ? "Conectando..." : "Conectar"}
-            </Button>
-          )}
-
           {/* MOBILE MENU BUTTON */}
           <button
             className="md:hidden text-2xl"
