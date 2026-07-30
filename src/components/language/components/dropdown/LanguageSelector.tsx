@@ -185,7 +185,7 @@ export default function LanguageSelector({
       {/* 🌍 BOTÃO PRINCIPAL (Preserva a UI Luxury EdenKingDom) */}
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2.5 bg-black/80 border border-[#D4AF37] rounded-full px-5 py-2.5 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all shadow-lg backdrop-blur-xl group"
+        className="flex items-center gap-2.5 bg-white/80 backdrop-blur border border-[#D4AF37] rounded-full px-5 py-2.5 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all shadow-lg backdrop-blur-xl group"
       >
         <Globe size={18} className="animate-spin-slow group-hover:scale-110 transition-transform" />
         <span className="font-medium text-sm tracking-wide">
@@ -196,7 +196,41 @@ export default function LanguageSelector({
 
       {/* 🔽 DROPDOWN MENU ENTERPRISE */}
       {open && (
-        <div className="absolute right-0 mt-3 w-80 md:w-96 bg-black/90 border border-[#D4AF37]/80 rounded-2xl backdrop-blur-2xl shadow-2xl p-4 z-50 animate-fadeIn text-white border-t-2 border-t-[#D4AF37]">
+  <div
+    className="
+      absolute
+      top-full
+      mt-3
+
+      left-1/2
+      -translate-x-1/2
+
+      md:left-auto
+      md:right-0
+      md:translate-x-0
+
+      w-[95vw]
+      max-w-[380px]
+      md:w-96
+
+      bg-blue/85
+      backdrop-blur-2xl
+
+      border
+      border-[#D4AF37]/40
+      border-t-2
+      border-t-[#D4AF37]
+
+      rounded-2xl
+      shadow-2xl
+
+      p-4
+      z-50
+      animate-fadeIn
+
+      text-slate-800
+    "
+  >
           
           {/* 1. CABEÇALHO COM STATS */}
           <div className="flex items-center justify-between pb-3 border-b border-[#D4AF37]/20 mb-3">
