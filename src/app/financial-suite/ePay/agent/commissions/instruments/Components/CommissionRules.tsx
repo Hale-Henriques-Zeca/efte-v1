@@ -61,16 +61,16 @@ export const CommissionRules: React.FC = () => {
         <p className="text-xs font-semibold text-slate-300">Regras da ePay Agent prize Pool:</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
           <div className="p-3.5 bg-slate-950/50 border border-slate-800 rounded-xl space-y-1">
-            <span className="font-bold text-emerald-400 block"> ⚡Staking eCoin for weekly salary</span>
+            <span className="font-bold text-emerald-400 block"> 🔹 Staking edollar for weekly salary</span>
             <p className="text-slate-400 text-[11px]">
-              O agente da ePay e obrigação de ou fazer staking de eCoin ou eDollar de qualquer valor/quantia mesmo que seja centavos para a activacao da sua contra agente e qualificar-se para o salario semanal (O pool eCoin recebe 0.00007% de cada transação com os agentes a cada instante). 
+              O agente da ePay e obrigação de ou fazer staking de eDollar ou eCoin de qualquer valor/quantia mesmo que seja centavos para a activacao da sua contra agente e qualificar-se para o salario semanal (O pool eDollar recebe 0.00003% de cada transação com os agentes a cada instante).
             </p>
           </div>
 
           <div className="p-3.5 bg-slate-950/50 border border-slate-800 rounded-xl space-y-1">
-            <span className="font-bold text-amber-400 block">🔹 Staking edollar for weekly salary</span>
+            <span className="font-bold text-amber-400 block">⚡Staking eCoin for weekly salary</span>
             <p className="text-slate-400 text-[11px]">
-              O agente da ePay e obrigação de ou fazer staking de eDollar ou eCoin de qualquer valor/quantia mesmo que seja centavos para a activacao da sua contra agente e qualificar-se para o salario semanal (O pool eDollar recebe 0.00003% de cada transação com os agentes a cada instante). 
+              O agente da ePay e obrigação de ou fazer staking de eCoin ou eDollar de qualquer valor/quantia mesmo que seja centavos para a activacao da sua contra agente e qualificar-se para o salario semanal (O pool eCoin recebe 0.00007% de cada transação com os agentes a cada instante). 
             </p>
           </div>
         </div>

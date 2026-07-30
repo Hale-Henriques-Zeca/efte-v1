@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../ui/Button";
 import { useAccount, useConnect } from "wagmi";
+import LanguageSelector from "@/components/language/components/dropdown/LanguageSelector";
 
 function shortAddress(addr?: string) {
   if (!addr) return "";
@@ -20,6 +21,23 @@ export default function Header() {
     (c) => c.id === "injected"
   );
 
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const lang = localStorage.getItem("EKD_LANG") || "en";
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const handleLangChange = (lang: string) => {
+    localStorage.setItem("EKD_LANG", lang);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b border-black/10">
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -30,11 +48,15 @@ export default function Header() {
           <span className="font-semibold text-[#1C2D5A]">EFTE</span>
         </Link>
 
+        <div className="border-l border-white/10 pl-3">
+              <LanguageSelector onLangChange={handleLangChange} />
+            </div>
+
         {/* DESKTOP NAV */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1C2D5A]">
           <Link href="/">Home</Link>
           <Link href="/financial-suite/ePay/agent">ePay Agent</Link>
-          <Link href="/trade">Trade OnChain</Link>
+          <Link href="/eCoinCloudWallet">eCoin Wallet</Link>
           <Link href="/equipes">Team Leader</Link>
         </div>
 
@@ -79,8 +101,8 @@ export default function Header() {
               ePay Agent
             </Link>
 
-            <Link href="/trade" onClick={() => setOpen(false)}>
-              Trade OnChain
+            <Link href="/eCoinCloudWallet" onClick={() => setOpen(false)}>
+              eCoin Wallet
             </Link>
 
             <Link href="/equipes" onClick={() => setOpen(false)}>

@@ -35,8 +35,8 @@ export default function Footer() {
           <h4 className="text-sm font-semibold mb-3 text-white">Plataforma</h4>
           <ul className="space-y-2 text-sm opacity-80">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/p2p">P2P Trading Terminal</Link></li>
-            <li><Link href="/trade">Trade OnChain</Link></li>
+            <li><Link href="/financial-suite/ePay/agent">ePay Agent</Link></li>
+            <li><Link href="/eCoinCloudWallet">eCoin cloud Wallet</Link></li>
             <li><Link href="/equipes">Team Leader</Link></li>
           </ul>
         </div>
@@ -48,7 +48,7 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <h4 className="text-sm font-semibold mb-3 text-[#D4AF37]">
-            E-Coin Comunidade
+            eCoin Comunidade
           </h4>
 
           <div className="flex gap-4 text-2xl text-[#D4AF37]">
@@ -107,7 +107,7 @@ export default function Footer() {
       rel="noopener noreferrer"
       className="bg-[#D4AF37]/10 border border-[#D4AF37]/40 rounded-full px-4 py-2 text-sm text-[#D4AF37] hover:bg-[#D4AF37]/20 hover:shadow-[0_0_10px_#D4AF37aa] transition-all"
     >
-      📢 Canal WhatsApp EKD Oficial
+      📢 Canal WhatsApp EdenKingDom Oficial
     </a>
 
     <div className="flex gap-2 text-2xl">
@@ -155,7 +155,7 @@ export default function Footer() {
           <p className="text-sm opacity-70">
             Plataforma em desenvolvimento contínuo.
             <br />
-            Compra on-chain via Web3 já disponível.
+            Compra & Venda on-chain via Web3 através do ePay Agnet já disponível.
           </p>
         </div>
 
