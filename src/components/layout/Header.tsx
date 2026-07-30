@@ -48,9 +48,7 @@ export default function Header() {
           <span className="font-semibold text-[#1C2D5A]">EFTE</span>
         </Link>
 
-        <div className="border-l border-white/10 pl-3">
-              <LanguageSelector onLangChange={handleLangChange} />
-            </div>
+        
 
         {/* DESKTOP NAV */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1C2D5A]">
@@ -63,22 +61,10 @@ export default function Header() {
         {/* RIGHT */}
         <div className="flex items-center gap-3">
 
-          {/* WALLET */}
-          {isConnected ? (
-            <span className="text-sm font-semibold text-green-600">
-              {shortAddress(address)}
-            </span>
-          ) : (
-            <Button
-              variant="gold"
-              onClick={() =>
-                injectedConnector &&
-                connect({ connector: injectedConnector })
-              }
-            >
-              {isPending ? "Conectando..." : "Conectar"}
-            </Button>
-          )}
+          {/* LANGUAGE */}
+          <div className="border-l border-white/10 pl-3">
+              <LanguageSelector onLangChange={handleLangChange} />
+            </div>
 
           {/* MOBILE MENU BUTTON */}
           <button
