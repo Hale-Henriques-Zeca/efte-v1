@@ -197,40 +197,43 @@ export default function LanguageSelector({
       {/* 🔽 DROPDOWN MENU ENTERPRISE */}
       {open && (
   <div
-    className="
-      absolute
-      top-full
-      mt-3
+  className="
+absolute
+top-full
+mt-3
 
-      left-1/2
-      -translate-x-1/2
+right-0
 
-      md:left-auto
-      md:right-0
-      md:translate-x-0
+md:right-0
 
-      w-[95vw]
-      max-w-[380px]
-      md:w-96
+max-md:fixed
+max-md:left-1/2
+max-md:-translate-x-1/2
+max-md:top-[72px]
 
-      bg-blue/85
-      backdrop-blur-2xl
+w-[94vw]
+max-w-[420px]
+md:w-96
 
-      border
-      border-[#D4AF37]/40
-      border-t-2
-      border-t-[#D4AF37]
+bg-blue/90
+backdrop-blur-xl
 
-      rounded-2xl
-      shadow-2xl
+rounded-2xl
+shadow-2xl
 
-      p-4
-      z-50
-      animate-fadeIn
+border
+border-[#D4AF37]/40
+border-t-2
+border-t-[#D4AF37]
 
-      text-slate-800
-    "
-  >
+p-4
+
+z-[9999]
+
+text-slate-800
+animate-fadeIn
+"
+>
           
           {/* 1. CABEÇALHO COM STATS */}
           <div className="flex items-center justify-between pb-3 border-b border-[#D4AF37]/20 mb-3">
