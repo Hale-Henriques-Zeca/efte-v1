@@ -185,7 +185,7 @@ export default function LanguageSelector({
       {/* 🌍 BOTÃO PRINCIPAL (Preserva a UI Luxury EdenKingDom) */}
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2.5 bg-blue/85 backdrop-blur border border-[#D4AF37] rounded-full px-5 py-2.5 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all shadow-lg backdrop-blur-xl group"
+        className="flex items-center gap-2.5 bg-black/85 backdrop-blur border border-[#D4AF37] rounded-full px-5 py-2.5 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all shadow-lg backdrop-blur-xl group"
       >
         <Globe size={18} className="animate-spin-slow group-hover:scale-110 transition-transform" />
         <span className="font-medium text-sm tracking-wide">
